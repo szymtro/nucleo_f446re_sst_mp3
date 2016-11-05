@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<emIDE_layout_file>
+	<ActiveTarget name="Release" />
+	<File name="USB_OTG\usb_hcd_int.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3318" topLine="154" />
+		</Cursor>
+	</File>
+	<File name="USB_OTG\usb_hcd_int.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3252" topLine="89" />
+		</Cursor>
+	</File>
+	<File name="STM32F4xx_StdPeriph_Driver\stm32f4xx_adc.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1452" topLine="26" />
+		</Cursor>
+	</File>
+	<File name="Setup\startup_stm32f446xx.s" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12709" topLine="209" />
+		</Cursor>
+	</File>
+	<File name="USB_Host\usbh_core.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6346" topLine="132" />
+		</Cursor>
+	</File>
+	<File name="FATfs\integer.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="207" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Setup\STM32F446RETx_FLASH.ld" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5482" topLine="28" />
+		</Cursor>
+	</File>
+	<File name="USB_Host\usbh_msc_fatfs.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="407" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Src\Audio.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="773" topLine="19" />
+		</Cursor>
+	</File>
+	<File name="Src\main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3934" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="Src\main.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="322" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="USB_OTG\usb_core.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8191" topLine="328" />
+		</Cursor>
+	</File>
+	<File name="Src\stm32f4xx_it.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4427" topLine="149" />
+		</Cursor>
+	</File>
+	<File name="Src\stm32f4xx_it.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2080" topLine="23" />
+		</Cursor>
+	</File>
+	<File name="Src\usb_bsp.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="12983" topLine="388" />
+		</Cursor>
+	</File>
+</emIDE_layout_file>

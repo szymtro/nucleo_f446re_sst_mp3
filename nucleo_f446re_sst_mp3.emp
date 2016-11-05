@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<emIDE_project_file>
+	<FileVersion major="1" minor="7" />
+	<Project>
+		<Option title="nucleo_f446re_sst_mp3" />
+		<Option pch_mode="2" />
+		<Option compiler="armelfgcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="./nucleo_f446re_sst_mp3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/" />
+				<Option type="1" />
+				<Option compiler="armelfgcc" />
+				<Compiler>
+					<Add option="-mthumb" />
+					<Add option="-mcpu=cortex-m4" />
+					<Add option="-std=c99" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Wl,-Map" />
+					<Add option="-Wl,${TARGET_OUTPUT_FILE}.map" />
+					<Add option="-Wl,--gc-sections" />
+					<Add option="-n" />
+					<Add option="-Wl,-cref" />
+					<Add option="-mcpu=cortex-m4" />
+					<Add option="-mthumb" />
+					<Add option="-TSetup\STM32F446RETx_FLASH.ld" />
+				</Linker>
+				<PostOutput>
+					<ConvertedOutput PostOutputCreate="1" />
+					<ConvertedOutput PostOutputType="BIN" />
+					<ConvertedOutput PostOutputFile="${TARGET_OUTPUT_BASENAME}" />
+				</PostOutput>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="STM32F4xx_StdPeriph_Driver" />
+			<Add directory="Src" />
+			<Add directory="CMSIS" />
+			<Add directory="USB_Host" />
+			<Add directory="USB_OTG" />
+			<Add directory="5110" />
+			<Add directory="FATfs" />
+			<Add directory="HELIX" />
+		</Compiler>
+		<PostOutput>
+			<ConvertedOutput PostOutputCreate="0" />
+			<ConvertedOutput PostOutputType="BIN" />
+			<ConvertedOutput PostOutputFile="${TARGET_OUTPUT_DIR}${TARGET_OUTPUT_BASENAME}" />
+		</PostOutput>
+		<Unit filename="5110/5110.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="5110/5110.h" />
+		<Unit filename="5110/font.h" />
+		<Unit filename="CMSIS/arm_common_tables.h" />
+		<Unit filename="CMSIS/arm_math.h" />
+		<Unit filename="CMSIS/core_cm4.h" />
+		<Unit filename="CMSIS/core_cm4_simd.h" />
+		<Unit filename="CMSIS/core_cmFunc.h" />
+		<Unit filename="CMSIS/core_cmInstr.h" />
+		<Unit filename="FATfs/ccsbcs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FATfs/diskio.h" />
+		<Unit filename="FATfs/fattime.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FATfs/fattime.h" />
+		<Unit filename="FATfs/ff.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FATfs/ff.h" />
+		<Unit filename="FATfs/ffconf.h" />
+		<Unit filename="FATfs/integer.h" />
+		<Unit filename="HELIX/assembly.h" />
+		<Unit filename="HELIX/bitstream.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/buffers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/coder.h" />
+		<Unit filename="HELIX/dct32.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/dequant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/dqchan.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/huffman.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/hufftabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/imdct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/mp3common.h" />
+		<Unit filename="HELIX/mp3dec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/mp3dec.h" />
+		<Unit filename="HELIX/mp3tabs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/mpadecobjfixpt.h" />
+		<Unit filename="HELIX/platform.h" />
+		<Unit filename="HELIX/polyphase.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/scalfact.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/statname.h" />
+		<Unit filename="HELIX/stproc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/subband.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="HELIX/trigtabs_fixpt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/misc.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_adc.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_can.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_can.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_crc.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_des.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_cryp_tdes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dac.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dbgmcu.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dcmi.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_dma.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_exti.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_flash.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_fsmc.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_gpio.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_hash.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_hash_sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_i2c.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_iwdg.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_pwr.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_rcc.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_rng.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_rtc.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_sdio.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_spi.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_syscfg.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_tim.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_usart.h" />
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="STM32F4xx_StdPeriph_Driver/stm32f4xx_wwdg.h" />
+		<Unit filename="Setup/STM32F446RETx_FLASH.ld" />
+		<Unit filename="Setup/startup_stm32f446xx.s" />
+		<Unit filename="Src/Audio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/Audio.h" />
+		<Unit filename="Src/config_io.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/config_io.h" />
+		<Unit filename="Src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/main.h" />
+		<Unit filename="Src/stm32f4xx.h" />
+		<Unit filename="Src/stm32f4xx_conf.h" />
+		<Unit filename="Src/stm32f4xx_it.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/stm32f4xx_it.h" />
+		<Unit filename="Src/system_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/system_stm32f4xx.h" />
+		<Unit filename="Src/usb_bsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/usb_conf.h" />
+		<Unit filename="Src/usbd_conf.h" />
+		<Unit filename="Src/usbd_desc.h" />
+		<Unit filename="Src/usbh_conf.h" />
+		<Unit filename="Src/usbh_usr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Src/usbh_usr.h" />
+		<Unit filename="USB_Host/usbh_conf_template.h" />
+		<Unit filename="USB_Host/usbh_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_core.h" />
+		<Unit filename="USB_Host/usbh_def.h" />
+		<Unit filename="USB_Host/usbh_hcs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_hcs.h" />
+		<Unit filename="USB_Host/usbh_ioreq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_ioreq.h" />
+		<Unit filename="USB_Host/usbh_msc_bot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_msc_bot.h" />
+		<Unit filename="USB_Host/usbh_msc_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_msc_core.h" />
+		<Unit filename="USB_Host/usbh_msc_fatfs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_msc_scsi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_msc_scsi.h" />
+		<Unit filename="USB_Host/usbh_stdreq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_Host/usbh_stdreq.h" />
+		<Unit filename="USB_OTG/usb_bsp.h" />
+		<Unit filename="USB_OTG/usb_conf_template.h" />
+		<Unit filename="USB_OTG/usb_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_OTG/usb_core.h" />
+		<Unit filename="USB_OTG/usb_dcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_OTG/usb_dcd.h" />
+		<Unit filename="USB_OTG/usb_dcd_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_OTG/usb_dcd_int.h" />
+		<Unit filename="USB_OTG/usb_defines.h" />
+		<Unit filename="USB_OTG/usb_hcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_OTG/usb_hcd.h" />
+		<Unit filename="USB_OTG/usb_hcd_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_OTG/usb_hcd_int.h" />
+		<Unit filename="USB_OTG/usb_otg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="USB_OTG/usb_otg.h" />
+		<Unit filename="USB_OTG/usb_regs.h" />
+		<Extensions>
+			<projectwizard TargetDevice="STM32F401RE" />
+			<code_completion />
+			<debugger>
+				<remote_debugging target="Release">
+					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="2331" remote_server="Other (External tool)" Break_at_Main="1" Break_at_Main_Symbol="main" additional_cmds="monitor reset&#x0A;load" />
+				</remote_debugging>
+			</debugger>
+			<J-Link>
+				<GDBServer TargetName="Release">
+					<CmdOption UseGDBServer="0" />
+					<CmdOption TargetDevice="STM32F401RE" />
+					<CmdOption TargetInterface="0" />
+					<CmdOption InterfaceSpeed="4000" />
+					<CmdOption TargetEndian="0" />
+					<CmdOption OverrideExe="0" Filename="" />
+					<CmdOption StartServer="1" />
+					<CmdOption CloseServer="1" />
+					<CmdOption ServerIP="localhost" />
+					<CmdOption ServerPort="2331" />
+					<CmdOption UseAdvancedOptions="0" />
+					<CmdOption SelectJLink="" />
+					<CmdOption InitRegs="1" />
+					<CmdOption LocalhostOnly="1" />
+					<CmdOption Log="0" Filename="" />
+					<CmdOption Silent="0" />
+					<CmdOption StayOnTop="0" />
+					<CmdOption VerifyDownload="0" />
+					<CmdOption NoTargetTimeout="0" />
+					<CmdOption JTAGConf="0" IRPre="0" DRPre="0" />
+					<CmdOption JLinkScript="0" Filename="" />
+					<CmdOption JLinkSettings="0" Filename="" />
+					<CmdOption GDBInit="0" Filename="" />
+					<CmdOption AdditionalOptions="" />
+				</GDBServer>
+			</J-Link>
+		</Extensions>
+	</Project>
+</emIDE_project_file>
